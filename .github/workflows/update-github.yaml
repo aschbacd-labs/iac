@@ -1,0 +1,16 @@
+name: Update GitHub
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - iac/github/**
+      - Pulumi.github.prod.yaml
+jobs:
+  update:
+    name: Update
+    uses: ./.github/workflows/pulumi.yml
+    secrets: inherit
+    with:
+      command: up
+      stack-name: github.prod

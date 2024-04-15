@@ -1,0 +1,16 @@
+name: Preview GitHub
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - iac/github/**
+      - Pulumi.github.prod.yaml
+jobs:
+  preview:
+    name: Preview
+    uses: ./.github/workflows/pulumi.yml
+    secrets: inherit
+    with:
+      command: preview
+      stack-name: github.prod
