@@ -8,4 +8,8 @@ config:
     # Repositories
     repositories: []
     # Teams
-    teams: []
+    teams:
+      - name: developers
+        description: Actively develop and maintain the codebase
+        members:
+          - aschbacd
