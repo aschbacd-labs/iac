@@ -1,0 +1,26 @@
+[tool.black]
+line-length = 100
+target-version = ['py312']
+
+[tool.poetry]
+name = "iac"
+version = "0.0.1"
+description = "Resource management via Pulumi"
+authors = ["Dominik Aschbacher <dominik.aschbacher.00@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pulumi = "3.105.0"
+pulumi-github = "5.26.0"
+pydantic = "2.6.1"
+
+[tool.poetry.dev-dependencies]
+black = "24.1.1"
+flake8 = "7.0.0"
+isort = "5.13.2"
+pep8-naming = "0.13.3"
+pre-commit = "3.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

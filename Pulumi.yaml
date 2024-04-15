@@ -1,0 +1,6 @@
+name: iac
+runtime:
+  name: python
+  options:
+    virtualenv: .venv
+description: Resource management via Pulumi (Infrastructure as Code).
