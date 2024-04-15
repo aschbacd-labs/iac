@@ -15,6 +15,14 @@ config:
         teams:
           - name: developers
             permission: push
+      - name: test2
+        # description: Test repository 2
+        topics:
+          - reactjs
+          - frontend
+        teams:
+          - name: developers
+            permission: push
     # Teams
     teams:
       - name: developers
