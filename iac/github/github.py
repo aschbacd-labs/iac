@@ -76,7 +76,7 @@ class GitHub(ComponentResource):
                 repo.name,
                 name=repo.name,
                 description=repo.description,
-                visibility="private",
+                visibility=repo.visibility,
                 has_issues=False,
                 has_projects=False,
                 has_wiki=False,
