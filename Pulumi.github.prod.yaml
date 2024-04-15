@@ -6,7 +6,15 @@ config:
   # GitHub organization config
   iac:github:
     # Repositories
-    repositories: []
+    repositories:
+      - name: test1
+        description: Test repository 1
+        topics:
+          - golang
+          - backend
+        teams:
+          - name: developers
+            permission: push
     # Teams
     teams:
       - name: developers
