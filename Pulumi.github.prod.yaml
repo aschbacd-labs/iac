@@ -15,9 +15,22 @@ config:
         teams:
           - name: developers
             permission: push
+      - name: slides
+        description: Slides for GitOps presentation
+        visibility: public
+        topics:
+          - htl
+          - slides
+        teams:
+          - name: slide-maintainers
+            permission: push
     # Teams
     teams:
       - name: developers
         description: Actively develop and maintain the codebase
+        members:
+          - aschbacd
+      - name: slide-maintainers
+        description: Maintain slides
         members:
           - aschbacd

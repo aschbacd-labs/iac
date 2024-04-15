@@ -31,6 +31,7 @@ class Repository(BaseModel):
     topics: list[str] = []
     teams: list[RepositoryTeam]
     actions: Actions = Actions()
+    visibility: Literal["public", "private"] = "private"
 
 
 class GitHubConfig(BaseModel):
