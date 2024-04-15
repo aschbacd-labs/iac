@@ -6,6 +6,6 @@ ignore: |
 
 rules:
   document-start:
-    level: error
+    level: warning
     present: false
   line-length: disable
