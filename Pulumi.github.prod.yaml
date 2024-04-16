@@ -24,6 +24,14 @@ config:
         teams:
           - name: slide-maintainers
             permission: push
+      - name: htl
+        description: test demo
+        topics:
+          - htl
+          - demo
+        teams:
+          - name: developers
+            permission: push
     # Teams
     teams:
       - name: developers
